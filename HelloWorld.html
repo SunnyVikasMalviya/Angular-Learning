@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:4200/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>HelloWorld</title>
+  <!--<base href="/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="http://localhost:4200/favicon.ico">
+<style>/* You can add global styles to this file, and also import other style files */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvc3R5bGVzLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4RUFBOEUiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */</style><style>[_nghost-ylh-c17] {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1[_ngcontent-ylh-c17], h2[_ngcontent-ylh-c17], h3[_ngcontent-ylh-c17], h4[_ngcontent-ylh-c17], h5[_ngcontent-ylh-c17], h6[_ngcontent-ylh-c17] {
+    margin: 8px 0;
+  }
+
+  p[_ngcontent-ylh-c17] {
+    margin: 0;
+  }
+
+  .spacer[_ngcontent-ylh-c17] {
+    flex: 1;
+  }
+
+  .toolbar[_ngcontent-ylh-c17] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar[_ngcontent-ylh-c17]   img[_ngcontent-ylh-c17] {
+    margin: 0 16px;
+  }
+
+  .toolbar[_ngcontent-ylh-c17]   #twitter-logo[_ngcontent-ylh-c17] {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar[_ngcontent-ylh-c17]   #twitter-logo[_ngcontent-ylh-c17]:hover {
+    opacity: 0.8;
+  }
+
+  .content[_ngcontent-ylh-c17] {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  svg.material-icons[_ngcontent-ylh-c17] {
+    height: 24px;
+    width: auto;
+  }
+
+  svg.material-icons[_ngcontent-ylh-c17]:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .card[_ngcontent-ylh-c17]   svg.material-icons[_ngcontent-ylh-c17]   path[_ngcontent-ylh-c17] {
+    fill: #888;
+  }
+
+  .card-container[_ngcontent-ylh-c17] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card[_ngcontent-ylh-c17] {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+  }
+
+  .card-container[_ngcontent-ylh-c17]   .card[_ngcontent-ylh-c17]:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small[_ngcontent-ylh-c17] {
+    height: 16px;
+    width: 168px;
+  }
+
+  .card-container[_ngcontent-ylh-c17]   .card[_ngcontent-ylh-c17]:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container[_ngcontent-ylh-c17]   .card[_ngcontent-ylh-c17]:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  .card-container[_ngcontent-ylh-c17]   .card[_ngcontent-ylh-c17]:not(.highlight-card):hover   .material-icons[_ngcontent-ylh-c17]   path[_ngcontent-ylh-c17] {
+    fill: rgb(105, 103, 103);
+  }
+
+  .card.highlight-card[_ngcontent-ylh-c17] {
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    min-width: 30%;
+    position: relative;
+  }
+
+  .card.card.highlight-card[_ngcontent-ylh-c17]   span[_ngcontent-ylh-c17] {
+    margin-left: 60px;
+  }
+
+  svg#rocket[_ngcontent-ylh-c17] {
+    width: 80px;
+    position: absolute;
+    left: -10px;
+    top: -24px;
+  }
+
+  svg#rocket-smoke[_ngcontent-ylh-c17] {
+    height: calc(100vh - 95px);
+    position: absolute;
+    top: 10px;
+    right: 180px;
+    z-index: -10;
+  }
+
+  a[_ngcontent-ylh-c17], a[_ngcontent-ylh-c17]:visited, a[_ngcontent-ylh-c17]:hover {
+    color: #1976d2;
+    text-decoration: none;
+  }
+
+  a[_ngcontent-ylh-c17]:hover {
+    color: #125699;
+  }
+
+  .terminal[_ngcontent-ylh-c17] {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 6px;
+    padding-top: 45px;
+    margin-top: 8px;
+    overflow: hidden;
+    background-color: rgb(15, 15, 16);
+  }
+
+  .terminal[_ngcontent-ylh-c17]::before {
+    content: "\2022 \2022 \2022";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: rgb(58, 58, 58);
+    color: #c2c3c4;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 0;
+    padding: 14px 0;
+    text-indent: 4px;
+  }
+
+  .terminal[_ngcontent-ylh-c17]   pre[_ngcontent-ylh-c17] {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    color: white;
+    padding: 0 1rem 1rem;
+    margin: 0;
+  }
+
+  .circle-link[_ngcontent-ylh-c17] {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    margin: 8px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: 1s ease-out;
+  }
+
+  .circle-link[_ngcontent-ylh-c17]:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer[_ngcontent-ylh-c17] {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+  }
+
+  footer[_ngcontent-ylh-c17]   a[_ngcontent-ylh-c17] {
+    display: flex;
+    align-items: center;
+  }
+
+  .github-star-badge[_ngcontent-ylh-c17] {
+    color: #24292e;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: 3px;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    margin-left: 4px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  }
+
+  .github-star-badge[_ngcontent-ylh-c17]:hover {
+    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
+    border-color: rgba(27,31,35,.35);
+    background-position: -.5em;
+  }
+
+  .github-star-badge[_ngcontent-ylh-c17]   .material-icons[_ngcontent-ylh-c17] {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  svg#clouds[_ngcontent-ylh-c17] {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+
+  
+  @media screen and (max-width: 767px) {
+
+    .card-container[_ngcontent-ylh-c17]    > *[_ngcontent-ylh-c17]:not(.circle-link), .terminal[_ngcontent-ylh-c17] {
+      width: 100%;
+    }
+
+    .card[_ngcontent-ylh-c17]:not(.highlight-card) {
+      height: 16px;
+      margin: 8px 0;
+    }
+
+    .card.highlight-card[_ngcontent-ylh-c17]   span[_ngcontent-ylh-c17] {
+      margin-left: 72px;
+    }
+
+    svg#rocket-smoke[_ngcontent-ylh-c17] {
+      right: 120px;
+      transform: rotate(-5deg);
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    svg#rocket-smoke[_ngcontent-ylh-c17] {
+      display: none;
+      visibility: hidden;
+    }
+  }</style><style>p[_ngcontent-ylh-c16]{
+	color: rgb(0,0,0);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVzdC90ZXN0LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Q0FDQyxpQkFBaUI7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC90ZXN0L3Rlc3QuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbInB7XHJcblx0Y29sb3I6IHJnYigwLDAsMCk7XHJcbn0iXX0= */</style></head>
+<body>
+  <app-root _nghost-ylh-c17="" ng-version="10.1.3"><div _ngcontent-ylh-c17="" role="banner" class="toolbar"><img _ngcontent-ylh-c17="" width="40" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="><span _ngcontent-ylh-c17="">Welcome to your very first program with Angular 8!</span><div _ngcontent-ylh-c17="" class="spacer"></div><a _ngcontent-ylh-c17="" aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter"><svg _ngcontent-ylh-c17="" id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect _ngcontent-ylh-c17="" width="400" height="400" fill="none"></rect><path _ngcontent-ylh-c17="" d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"></path></svg></a></div><div _ngcontent-ylh-c17="" role="main" class="content"><div _ngcontent-ylh-c17="" class="card highlight-card card-small"><span _ngcontent-ylh-c17="">Hello-World app is running!</span></div><div _ngcontent-ylh-c17=""><app-test _ngcontent-ylh-c17="" _nghost-ylh-c16=""><p _ngcontent-ylh-c16=""><br _ngcontent-ylh-c16=""> test works!</p></app-test></div></div><router-outlet _ngcontent-ylh-c17=""></router-outlet><!--container--></app-root>
+<script src="./HelloWorld_files/runtime.js.download" defer=""></script><script src="./HelloWorld_files/polyfills.js.download" defer=""></script><script src="./HelloWorld_files/styles.js.download" defer=""></script><script src="./HelloWorld_files/vendor.js.download" defer=""></script><script src="./HelloWorld_files/main.js.download" defer=""></script>
+
+</body></html>
