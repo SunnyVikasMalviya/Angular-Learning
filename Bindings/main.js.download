@@ -1,0 +1,1121 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ 0:
+/*!**********************************************************************************************************!*\
+  !*** multi (webpack)-dev-server/client?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node ./src/main.ts ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\MvikBack\Angular\Binding\node_modules\webpack-dev-server\client\index.js?http://0.0.0.0:0/sockjs-node&sockPath=/sockjs-node */"lDok");
+module.exports = __webpack_require__(/*! C:\MvikBack\Angular\Binding\src\main.ts */"zUnb");
+
+
+/***/ }),
+
+/***/ "AytR":
+/*!*****************************************!*\
+  !*** ./src/environments/environment.ts ***!
+  \*****************************************/
+/*! exports provided: environment */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+const environment = {
+    production: false
+};
+/*
+ * For easier debugging in development mode, you can import the following file
+ * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
+ *
+ * This import should be commented out in production mode because it will have a negative impact
+ * on performance if an error is thrown.
+ */
+// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+
+/***/ }),
+
+/***/ "K9yR":
+/*!****************************************!*\
+  !*** ./src/app/test/test.component.ts ***!
+  \****************************************/
+/*! exports provided: TestComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestComponent", function() { return TestComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "ofXK");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+
+
+
+
+class TestComponent {
+    constructor() {
+        this.name = "Gareeb";
+        this.myID = "test-ID";
+        this.siteUrl = window.location.href;
+        this.isDisabled = false;
+        this.successClass = "success";
+        this.failureClass = "failure";
+        this.specialClass = "special";
+        this.hasError = true;
+        this.isSpecial = true;
+        this.myClassesObj = {
+            "success": !this.hasError,
+            "failure": this.hasError,
+            "special": this.isSpecial
+        };
+        this.myColor = 'blue';
+        this.myStylesObj = {
+            color: 'orange',
+            fontFamily: 'arial',
+            fontStyle: 'italic'
+        };
+        this.sayHi = "";
+        this.greetings = "";
+        this.clicks = 0;
+        this.name1 = "";
+        this.name2 = "";
+        this.name3 = "";
+        this.name4 = "Remove this text";
+        /*For aliases, the above can also be written as below:
+        @Input('ChildVariableReceivingParentData') public new_alias;
+        Now, new_alias can be used in test-component as an alias for ChildVariableReceivingParentData */
+        this.ChildEvent = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
+        this.for_pipeing = "Lorem Ipsum. Ipsum Lorem.";
+        this.for_pipeing1 = {
+            Lorem: "Ipsum.",
+            Ipsum: "Lorem."
+        };
+        this.date = new Date();
+    }
+    ngOnInit() {
+    }
+    greetUser() {
+        return "How are you today " + this.name + "?";
+    }
+    onUserClick() {
+        this.clicks = this.clicks + 1;
+        console.log('I am logging here whenever you click that button. Count = ' + this.clicks);
+        this.greetings = "Welcome to Angular learning. Check the developer tools console to see the log.";
+        this.sayHi = "Hi ";
+    }
+    getEventData(event) {
+        console.log(event);
+        this.XCoord = event.screenX;
+        this.YCoord = event.screenY;
+    }
+    logMessage(myInput) {
+        console.log(myInput);
+        console.log("Value:" + myInput.value);
+        console.log("Type: " + myInput.type);
+        console.log("The html tag and it's changing value is being displayed using template reference variable myInput.");
+    }
+    fireEvent() {
+        this.ChildEvent.emit("Ekdum Majama!! Tamne kehvo?");
+    }
+}
+TestComponent.ɵfac = function TestComponent_Factory(t) { return new (t || TestComponent)(); };
+TestComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TestComponent, selectors: [["app-test"]], inputs: { ChildVariableReceivingParentData: "ChildVariableReceivingParentData" }, outputs: { ChildEvent: "ChildEvent" }, decls: 333, vars: 127, consts: [["type", "text", "value", "Initial value", 3, "id"], ["type", "text", "value", "Initial value", 3, "disabled"], ["disabled", "false", "type", "text", "value", "Initial value"], [1, "success"], [1, "special"], [3, "ngClass"], [2, "color", "pink"], [3, "ngStyle"], [3, "click"], ["type", "text"], ["myInput", ""], ["type", "text", 3, "ngModel", "ngModelChange"], ["type", "text", "value", "Enter text here", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Enter text here", 3, "ngModel", "ngModelChange"], ["type", "text", "placeholder", "Wow!", 3, "ngModel", "ngModelChange"]], template: function TestComponent_Template(rf, ctx) { if (rf & 1) {
+        const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "1. Interpolation");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, " Welcome Vikas");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "2. Property Binding");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Attribute vs Property");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, " 1. Attributes and property are not the same.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](26, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, " 2. Attributes are defined by html, properties are defined by Document Object Model(DOM)...typescript class in this case.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](28, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, " 3. Attributes initialize DOM properties and then they are done. Attribute values cannot change once they are initialized.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](30, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](31, " 4. Property values however can change.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](32, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](33, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](34, "How to see the difference?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](35, " #1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "input", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](37, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](38, " #2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](39, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " #3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "input", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](44, " #4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "input", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](46, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](47, " #5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](48, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](49, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, " #6");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](52, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, " #7");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "input", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](55, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](56, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " 1. Go to Developer tools.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](59, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, " 2. Click on 'select an element from page to inspect it' and select the 1st input field.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](61, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, " 3. The selected element can now be accessed in the console by typing $0.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](64, " 4. Type $0.getAttribute('value') and $0.value in the console and see the values.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, " 5. Change the data in the input box in the page.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](67, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, " 6. Do step 4 again.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](69, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, " 7. Do this for all #1-#7 input fields.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](71, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](72, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](73, " #1 shows that interpolation works in case of string valued elements.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](74, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](75, " #2 shows that interpolatoin doesn't work for binary valued elements. Keeping disabled 'false' doesn't work.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](76, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](77, " #3 shows without property binding and interpolation. Doesn't work.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](78, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](79, " #4 shows property binding works for string valued elements.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](80, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](81, " #5 shows property binding works for binary valued elements.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](82, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](83, " #6 is same as #5 but with dynamic initialization of property. Works.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](84, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](85, " #7 shows alternate syntax of property binding. Works");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](86, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](87, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](88, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](89, "3. Class Binding");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](90, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](91, "A DIRECTIVE is a custom html attribute that angular provides...such as ngClass");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](92, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](93, " #1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](94, "h3", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](95, "Game of thrones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](96, " #2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](97, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](98, "Game of thrones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](99, " #3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](100, "h3", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](101, "Game of thrones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](102, " #4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](103, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](104, "Game of thrones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](105, " #5");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](106, "h3", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](107, "Game of thrones");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](108, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](109, " #1 shows usual way of assigning class to an element.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](110, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](111, " #2 shows syntax of class-binding of the class property of the h3 element.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](112, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](113, " #3 shows class binding + regular class assignment.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](114, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](115, " For #4 and #5, simply toggle/change hasError to false in the class. They both show how we can dynamically assign a class to an html element based on a conditional variable or state of the application.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](116, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](117, " #4 shows how we can assign a single class to an html element based on a conditional binary variable.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](118, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, " #5 shows how we can assign multiple classes to an html element using an object(in this case 'myClassesObj' contains binary variables that tell which classes to apply and which not to apply.)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](120, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](121, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, "4. Style Binding");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125, "In Angular, style binding is used for binding INLINE style to an html element.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "h3", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](127, "This shows normal use of CSS");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](128, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](129, "This shows style binding with CSS property. Take note that the color should be in string format i.e. colour name inside single qoutes('') inside double quotes(\"\").");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](130, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](131, "This shows applying style from component class property/variable.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, "This shows conditionally applying a style using style binding with CSS property. Just toggle value of hasError variable in the component class between true and false.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "h3", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](135, "This shows applying multiple styles by binding component class object 'myStylesObj' to ngStyle directive binding with CSS property. Just toggle value of hasError variable in the component class between true and false.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](136, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](137, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](138, "5. Event Binding");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](139, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](140, "Till now we saw flow of data from component class to the html template. But now, with event binding, we see flow of data from html template to the class based on events occuring through user interactions.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](141, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TestComponent_Template_button_click_141_listener() { return ctx.sayHi = "Hi "; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](142, "Say Hi!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](143, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](145, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](146, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TestComponent_Template_button_click_146_listener() { return ctx.onUserClick(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](147, "Say Hi!");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](148, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](149);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](150, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](152, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](153, " This button shows inline event binding.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](154, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](155, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TestComponent_Template_button_click_155_listener($event) { return ctx.getEventData($event); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](156, "GET X&Y");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](157);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](158, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](159, "Open console and then click this button. You will see all the event related data. Here the event was 'click'. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](160, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](161, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](162, "6. Template Reference Variables");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](163, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](164, "Template reference variables are used to easily access DOM elements and their properties. Meaning access all the html template tags and the attributes or properties they possess. Reference variables are created using '#' symbol before variable name in the html tag.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](165, " Open console and click on the button before and after typing.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](166, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](167, "input", 9, 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](169, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TestComponent_Template_button_click_169_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r1); const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](168); return ctx.logMessage(_r0); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](170, "Log");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](171, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](172, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](173, "7. Two Way Binding = Property binding + Event binding");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](174, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](175, "Two way binding allows us to update a property and simultaneously display that value. We need to use ngModel directive(present in Forms Module..need to be imported in app.module.ts).");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](176, " #1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](177, "input", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestComponent_Template_input_ngModelChange_177_listener($event) { return ctx.name1 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](178);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](179, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](180, " #2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](181, "input", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestComponent_Template_input_ngModelChange_181_listener($event) { return ctx.name2 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](182);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](183, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](184, " #3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](185, "input", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestComponent_Template_input_ngModelChange_185_listener($event) { return ctx.name3 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](186);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](187, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](188, " #4");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](189, "input", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ngModelChange", function TestComponent_Template_input_ngModelChange_189_listener($event) { return ctx.name4 = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](190);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](191, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](192, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](193, " 1. What ususally happens is...we type our input, click submit, and through event binding our input goes to component class and gets assigned. But here, we will simultaneously update our property value without submitting and display it next to the input box using interpolation. This helps in keeping the html template input value and component class property value in sync.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](194, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](195, " 2. We keep ngModel inside '[()]' because '[]' is used for property binding and '()' is used for event binding.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](196, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](197, " #1 shows Two way binding syntax.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](198, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](199, " #2 shows value attribute of the input tag present in the html template doesn't get assigned to the respective component class property with two way binding.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](200, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](201, " #3 shows placeholders can be used with two way binding.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](202, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](203, " #4 shows if a component class property initially assigned some value, it gets reflected into the input tag with two way binding.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](204, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](205, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](206, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](207, "8. Component Interaction");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](208, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](209, " AppComponent is the parent for all other components in angular. Test is an example of child component. Parent & child components interact using @Input() & @Output() decorator.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](210, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](211, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](212, "Parent to child data transfer: @Input()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](213, "Steps:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](214, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](215, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](216, " 1. Create a variable/property in app.component.ts in the component class (like ParentVariableSendingData in our case)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](217, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](218, " 2. In app.component.html, inside the opening tag of the test-component tag/selector(app-test in our case), bind a child-component variable/property to the app.component property just creeated. ([ChildVariableReceivingParentData]=\"ParentVariableSendingData\" in our case)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](219, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](220, " 3. In test.component.ts, add Input into the first line of import modules.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](221, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](222, " 4. Create a child-component variable as defined in the app.component.html.(ChildVariableReceivingParentData in our case).This variable/property will receive the parent data. Can also create an alias for the property as shown in this file near variable definition.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](223, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](224, " 5. Add @Input() just before public keyword in the child-component variable declaration. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](225, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](226, "Child to parent data transfer(through events): @Output()");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](227, "Steps:");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](228, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](229, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](230, " 1. Child-component sends data to parent-component using events.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](231, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](232, " 2. Import 'EventEmitter' and 'Output' class on the first line of import modules list.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](233, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](234, " 3. Create a new instance of the EventEmitter class.(ChildEvent in our case)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](235, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](236, " 4. To send this ChildEvent to app.component(parent), add @Output() just before the just declared ChildEvent instance.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](237, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](238, " 5. Now we need to trigger the event on some user action. Here we use a button click as the trigger. Add a new button tag in the test.component.ts template with event binding on type click event and a method defined in the component class of the test.component.ts.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](239, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](240, " 6. In the fireEvent method, call the emit() method with the ChildEvent instance of the EventEmitter, with the message/to-be-sent-data inside the paranthesis. This will send the data to the app.component.html.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](241, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](242, " 7. To catch the data at app.component.html, inside the opening tag of test-component tag/selector, create a new variable that will catch the data(answer in our case), equate it to $event which contains the event data and bind this to the event ChildEvent of the test.component.ts.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](243, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](244, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](245);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](246, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](247, "The above question came from app-component(parent) to test-component(child).");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](248, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](249, "button", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TestComponent_Template_button_click_249_listener() { return ctx.fireEvent(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](250, "Child Answers");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](251, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](252, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](253, "9. Pipes");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](254, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](255, "Pipes allow us to transfrom data before displaying them in the view/template.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](256, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](257);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](258, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](259);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](260, "lowercase");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](261, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](262);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](263, "uppercase");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](264, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](265);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](266, "titlecase");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](267, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](268);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](269, "slice");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](270, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](271);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](272, "json");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](273, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](274, " Number Pipes");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](275, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](276);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](277, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](278, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](279);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](280, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](281, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](282);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](283, "number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](284, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](285, " Percent Data");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](286, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](287);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](288, "percent");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](289, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](290, " Currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](291, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](292);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](293, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](294, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](295);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](296, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](297, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](298);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](299, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](300, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](301);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](302, "currency");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](303, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](304);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](305, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](306);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](307, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](308, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](309);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](310, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](311, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](312);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](313, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](314, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](315);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](316, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](317, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](318);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](319, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](320, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](321);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](322, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](323, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](324);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](325, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](326, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](327);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](328, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](329, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](330);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](331, "date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](332, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Welcome ", ctx.name, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](2 + 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("WElocme" + ctx.name);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.name.length);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.name.toUpperCase());
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.greetUser());
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("This is the address of this site : " + ctx.siteUrl);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("id", ctx.myID);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("disabled", false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("id", ctx.myID);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", ctx.isDisabled);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", false);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](43);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.successClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassMap"](ctx.successClass);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("failure", ctx.hasError);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngClass", ctx.myClassesObj);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("color", "green");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("color", ctx.myColor);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵstyleProp"]("color", ctx.hasError ? "red" : "green");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngStyle", ctx.myStylesObj);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.sayHi + ctx.name + "!", "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.sayHi + ctx.name + "!", "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](ctx.greetings);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate2"]("\"(", ctx.XCoord, ", ", ctx.YCoord, ")\"");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.name1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.name1, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.name2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.name2, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.name3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.name3, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.name4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.name4, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](55);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("Parent ask to the child:" + ctx.ChildVariableReceivingParentData);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Normal Text : ", ctx.for_pipeing, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" LowerCase : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](260, 65, ctx.for_pipeing), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" UpperCase : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](263, 67, ctx.for_pipeing), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" TitleCase : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](266, 69, ctx.for_pipeing), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Slicing : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](269, 71, ctx.for_pipeing, 3, 7), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Json Representation : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](272, 75, ctx.for_pipeing1), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](277, 77, 5.678, "1.2-3"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](280, 80, 5.678, "3.4-5"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](283, 83, 5.678, "3.1-2"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Percentage Representation : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](288, 86, 0.25), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Currency Representation(Dollar is default) : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](293, 88, 0.25), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Currency Representation(In Great Britain Pound) : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](296, 90, 0.25, "GBP"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Currency Representation(In GBP code, not representation) : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind3"](299, 93, 0.25, "GBP", "code"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Currency Representation(In INR) : ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](302, 97, 0.25, "INR"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Normal Date Format: ", ctx.date, "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Short Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](307, 100, ctx.date, "short"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Short Date Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](310, 103, ctx.date, "shortDate"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Short Time Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](313, 106, ctx.date, "shortTime"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Medium Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](316, 109, ctx.date, "medium"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Medium Date Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](319, 112, ctx.date, "mediumDate"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Medium Time Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](322, 115, ctx.date, "mediumTime"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Long Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](325, 118, ctx.date, "long"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Long Date Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](328, 121, ctx.date, "longDate"), "");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" Long Time Format: ", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](331, 124, ctx.date, "longTime"), "");
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["NgStyle"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"]], pipes: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["LowerCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["UpperCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["TitleCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["SlicePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["JsonPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["DecimalPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["PercentPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["CurrencyPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_1__["DatePipe"]], styles: [".success[_ngcontent-%COMP%] {\n\t\tcolor: green;\n\t}\n\t.failure[_ngcontent-%COMP%] {\n\t\tcolor:  red;\n\t}\n\t.special[_ngcontent-%COMP%] {\n\t\tfont-style: italic;\n\t}"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TestComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-test',
+                template: `
+  <!--INTERPOLATION-->
+  <div>
+  <h2>1. Interpolation</h2>
+  <h3>
+	Welcome Vikas<br/>   			<!--Static naming-->
+	Welcome {{name}}    			<!--Interpolation or dynamic naming-->
+  </h3>
+  <h3>{{2+6}}</h3>					<!--Evaluating expressions-->
+  <h3>{{"WElocme" + name}}</h3>		<!--Concatinating strings-->
+  <h3>{{name.length}}</h3>			<!--Using JavaScript property-->
+  <h3>{{name.toUpperCase()}}</h3>	<!--Using JavaScript methods-->
+  <h3>{{greetUser()}}</h3>			<!--Using Component class methods-->
+  <!--
+  Things we can't do using Interpolation
+  1. Cannot assign variables i.e. this {{a=4+2}} can't be done
+  2. Interpolation works good with string elements but cannot work with binary valued elements. Need to use property binding for it.<br/>
+  3. Access to global javascript variable is not available i.e. this {{window.location.href}} is not possible. Can do this inside the class, assign it to a variable and then bind the variable to a html element or attribute. (Shown below)  
+  -->
+  <h3>{{"This is the address of this site : " + siteUrl}}</h3>
+  </div>
+  
+  <!--PROPERTY BINDING-->
+  <div>
+  <h2>2. Property Binding</h2>
+  <h3>Attribute vs Property</h3>
+  <p>
+  1. Attributes and property are not the same.<br/>
+  2. Attributes are defined by html, properties are defined by Document Object Model(DOM)...typescript class in this case.<br/>
+  3. Attributes initialize DOM properties and then they are done. Attribute values cannot change once they are initialized.<br/>
+  4. Property values however can change.<br/>
+  </p>
+  <h3>How to see the difference?</h3>
+  #1<input id={{myID}} type="text" value="Initial value"><br/>				<!--#1-->
+  #2<input disabled="{{false}}" type="text" value="Initial value"><br/>		<!--#2-->
+  #3<input disabled="false" type="text" value="Initial value"><br/>			<!--#3-->
+  #4<input [id]="myID" type="text" value="Initial value"><br/>				<!--#4-->
+  #5<input [disabled]="false" type="text" value="Initial value"><br/>		<!--#5-->
+  #6<input [disabled]="isDisabled" type="text" value="Initial value"><br/><!--#6-->
+  #7<input bind-disabled="false" type="text" value="Initial value"><br/>	<!--#7-->
+  <br/>
+  <p>
+  1. Go to Developer tools.<br/>
+  2. Click on 'select an element from page to inspect it' and select the 1st input field.<br/>
+  3. The selected element can now be accessed in the console by typing $0.<br/>
+  4. Type $0.getAttribute('value') and $0.value in the console and see the values.<br/>
+  5. Change the data in the input box in the page.<br/>
+  6. Do step 4 again.<br/>
+  7. Do this for all #1-#7 input fields.<br/>
+  </p>
+  <p>
+  #1 shows that interpolation works in case of string valued elements.<br/>
+  #2 shows that interpolatoin doesn't work for binary valued elements. Keeping disabled 'false' doesn't work.<br/>
+  #3 shows without property binding and interpolation. Doesn't work.<br/>
+  #4 shows property binding works for string valued elements.<br/>
+  #5 shows property binding works for binary valued elements.<br/>
+  #6 is same as #5 but with dynamic initialization of property. Works.<br/>
+  #7 shows alternate syntax of property binding. Works<br/>
+  </p>
+  </div>
+  
+  <!--CLASS BINDING-->
+  <div>
+  <h2>3. Class Binding</h2>
+  <h3>A DIRECTIVE is a custom html attribute that angular provides...such as ngClass</h3>
+  <br/>
+  #1<h3 class="success">Game of thrones</h3>
+  #2<h3 [class]="successClass">Game of thrones</h3>
+  #3<h3 class="special" [class]="successClass">Game of thrones</h3>
+  #4<h3 [class.failure]="hasError">Game of thrones</h3>
+  #5<h3 [ngClass]="myClassesObj">Game of thrones</h3>
+  
+  <p>
+  #1 shows usual way of assigning class to an element.<br/>
+  #2 shows syntax of class-binding of the class property of the h3 element.<br/>
+  #3 shows class binding + regular class assignment.<br/>
+  For #4 and #5, simply toggle/change hasError to false in the class. They both show how we can dynamically assign a class to an html element based on a conditional variable or state of the application.<br/>
+  #4 shows how we can assign a single class to an html element based on a conditional binary variable.<br/>
+  #5 shows how we can assign multiple classes to an html element using an object(in this case 'myClassesObj' contains binary variables that tell which classes to apply and which not to apply.)<br/>
+  
+  
+  </p>
+  </div>
+  
+  <!--STYLE BINDING-->
+  <div>
+  <h2>4. Style Binding</h2>
+  <h3>In Angular, style binding is used for binding INLINE style to an html element.</h3>
+  <h3 style="color:pink">This shows normal use of CSS</h3>
+  <h3 [style.color]="'green'">This shows style binding with CSS property. Take note that the color should be in string format i.e. colour name inside single qoutes('') inside double quotes("").</h3>
+  <h3 [style.color]="myColor">This shows applying style from component class property/variable.</h3>
+  <h3 [style.color]="hasError ? 'red' : 'green'">This shows conditionally applying a style using style binding with CSS property. Just toggle value of hasError variable in the component class between true and false.</h3>
+  <h3 [ngStyle]="myStylesObj">This shows applying multiple styles by binding component class object 'myStylesObj' to ngStyle directive binding with CSS property. Just toggle value of hasError variable in the component class between true and false.</h3>
+  
+  </div>
+  
+  <!--EVENT BINDING-->
+  <div>
+  <h2>5. Event Binding</h2>
+  <h3>Till now we saw flow of data from component class to the html template. But now, with event binding, we see flow of data from html template to the class based on 
+  events occuring through user interactions.</h3>
+  <button (click)="sayHi = 'Hi '">Say Hi!</button><br/>
+  {{sayHi + name + "!"}}<br/>
+  <button (click)="onUserClick()">Say Hi!</button><br/>
+  {{sayHi + name + "!"}}<br/>{{greetings}}<br/>
+  This button shows inline event binding.<br/>
+  <button (click)="getEventData($event)">GET X&Y</button>"({{XCoord}}, {{YCoord}})"<br/>Open console and then click this button. You will see all the event related data. Here the event was 'click'.
+  </div>
+  
+  <!--TEMPLATE REFERENCE VARIABLE-->
+  <div>
+  <h2>6. Template Reference Variables</h2>
+  <h3>Template reference variables are used to easily access DOM elements and their properties. Meaning access all the html template tags and the attributes or properties they possess. Reference variables are created using '#' symbol before variable name in the html tag.</h3>
+  Open console and click on the button before and after typing.<br/>
+  <input #myInput type="text">
+  <button (click)="logMessage(myInput)">Log</button>
+  </div>
+  
+  <!--TWO WAY BINDING-->
+  <div>
+  <h2>7. Two Way Binding = Property binding + Event binding</h2>
+  <h3>Two way binding allows us to update a property and simultaneously display that value. We need to use ngModel directive(present in Forms Module..need to be imported in app.module.ts).</h3>
+  #1<input [(ngModel)]="name1" type="text">									<!--#1-->
+  {{name1}}<br/>
+  #2<input [(ngModel)]="name2" type="text" value="Enter text here">			<!--#2-->
+  {{name2}}<br/>
+  #3<input [(ngModel)]="name3" type="text" placeholder="Enter text here">	<!--#3-->
+  {{name3}}<br/>
+  #4<input [(ngModel)]="name4" type="text" placeholder="Wow!">				<!--#4-->
+  {{name4}}<br/>
+  <p>
+  1. What ususally happens is...we type our input, click submit, and through event binding our input goes to component class and gets assigned. But here, we will simultaneously update our property value without submitting and display it next to the input box using interpolation. This helps in keeping the html template input value and component class property value in sync.<br/>
+  2. We keep ngModel inside '[()]' because '[]' is used for property binding and '()' is used for event binding.<br/>
+  #1 shows Two way binding syntax.<br/>
+  #2 shows value attribute of the input tag present in the html template doesn't get assigned to the respective component class property with two way binding.<br/>
+  #3 shows placeholders can be used with two way binding.<br/>
+  #4 shows if a component class property initially assigned some value, it gets reflected into the input tag with two way binding.<br/>
+  </p>
+  </div>
+  
+  <!--COMPONENT INTERACTION-->
+  <div>
+  <h2>8. Component Interaction</h2>
+  <p>
+  AppComponent is the parent for all other components in angular. Test is an example of child component. Parent & child components interact using @Input() & @Output() decorator.</p><br/>
+  <h3>Parent to child data transfer: @Input()</h3>Steps:<br/>
+  <p>
+  1. Create a variable/property in app.component.ts in the component class (like ParentVariableSendingData in our case)<br/>
+  2. In app.component.html, inside the opening tag of the test-component tag/selector(app-test in our case), bind a child-component variable/property to the app.component property just creeated. ([ChildVariableReceivingParentData]="ParentVariableSendingData" in our case)<br/>
+  3. In test.component.ts, add Input into the first line of import modules.<br/>
+  4. Create a child-component variable as defined in the app.component.html.(ChildVariableReceivingParentData in our case).This variable/property will receive the parent data. Can also create an alias for the property as shown in this file near variable definition.<br/>
+  5. Add @Input() just before public keyword in the child-component variable declaration.
+  </p>
+  <h3>Child to parent data transfer(through events): @Output()</h3>Steps:<br/>
+  <p>
+  1. Child-component sends data to parent-component using events.<br/> 
+  2. Import 'EventEmitter' and 'Output' class on the first line of import modules list.<br/>
+  3. Create a new instance of the EventEmitter class.(ChildEvent in our case)<br/>
+  4. To send this ChildEvent to app.component(parent), add @Output() just before the just declared ChildEvent instance.<br/>
+  5. Now we need to trigger the event on some user action. Here we use a button click as the trigger. Add a new button tag in the test.component.ts template with event binding on type click event and a method defined in the component class of the test.component.ts.<br/>  
+  6. In the fireEvent method, call the emit() method with the ChildEvent instance of the EventEmitter, with the message/to-be-sent-data inside the paranthesis. This will send the data to the app.component.html.<br/>
+  7. To catch the data at app.component.html, inside the opening tag of test-component tag/selector, create a new variable that will catch the data(answer in our case), equate it to $event which contains the event data and bind this to the event ChildEvent of the test.component.ts.<br/>  
+  </p>
+  
+  
+  <h3>{{"Parent ask to the child:" + ChildVariableReceivingParentData}}</h3>
+  <p>The above question came from app-component(parent) to test-component(child).</p><br/>
+  <button (click)="fireEvent()">Child Answers</button>
+  </div>
+  
+  <!--PIPES-->
+  <div>
+  <h2>9. Pipes</h2>
+  <h3>Pipes allow us to transfrom data before displaying them in the view/template.</h3>
+  <h3>
+  Normal Text : {{for_pipeing}}<br/>
+  LowerCase : {{for_pipeing | lowercase}}<br/>
+  UpperCase : {{for_pipeing | uppercase}}<br/>
+  TitleCase : {{for_pipeing | titlecase}}<br/>
+  Slicing : {{for_pipeing | slice:3:7}}<br/>
+  Json Representation : {{for_pipeing1 | json}}<br/>
+  Number Pipes<br/>
+  {{5.678 | number:'1.2-3'}}<br/> 
+  <!--'Digits before decimal.Minimum digits after decimal-maximum digits after decimal'-->
+  {{5.678 | number:'3.4-5'}}<br/>
+  {{5.678 | number:'3.1-2'}}<br/>
+  Percent Data<br/>
+  Percentage Representation : {{0.25 | percent}}<br/>
+  Currency<br/>
+  Currency Representation(Dollar is default) : {{0.25 | currency}}<br/>
+  Currency Representation(In Great Britain Pound) : {{0.25 | currency: 'GBP'}}<br/>
+  Currency Representation(In GBP code, not representation) : {{0.25 | currency: 'GBP': 'code'}}<br/>
+  Currency Representation(In INR) : {{0.25 | currency: 'INR'}}<br/>
+  
+  Normal Date Format: {{date}}<br/>
+  Short Format: {{date | date:'short'}}<br/>
+  Short Date Format: {{date | date:'shortDate'}}<br/>
+  Short Time Format: {{date | date:'shortTime'}}<br/>
+  Medium Format: {{date | date:'medium'}}<br/>
+  Medium Date Format: {{date | date:'mediumDate'}}<br/>
+  Medium Time Format: {{date | date:'mediumTime'}}<br/>
+  Long Format: {{date | date:'long'}}<br/>
+  Long Date Format: {{date | date:'longDate'}}<br/>
+  Long Time Format: {{date | date:'longTime'}}<br/>
+  
+  </h3>
+  
+  </div>
+  
+  `,
+                styles: [`
+	.success {
+		color: green;
+	}
+	.failure {
+		color:  red;
+	}
+	.special {
+		font-style: italic;
+	}
+  `]
+            }]
+    }], function () { return []; }, { ChildVariableReceivingParentData: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"]
+        }], ChildEvent: [{
+            type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Output"]
+        }] }); })();
+
+
+/***/ }),
+
+/***/ "Sy1n":
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/*! exports provided: AppComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _test_test_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test/test.component */ "K9yR");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "tyNb");
+
+
+
+
+class AppComponent {
+    constructor() {
+        this.title = 'Binding';
+        this.ParentVariableSendingData = "A child baka....Kem Cho?";
+        this.answer = "";
+    }
+}
+AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
+AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AppComponent, selectors: [["app-root"]], decls: 11, vars: 2, consts: [[2, "text-align", "center"], [3, "ChildVariableReceivingParentData", "ChildEvent"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "h1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " This line is being displayed from APP COMPONENT ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "app-test", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("ChildEvent", function AppComponent_Template_app_test_ChildEvent_3_listener($event) { return ctx.answer = $event; });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h3");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "The above answer came from test-component(child) to app-component(parent).");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](10, "router-outlet");
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ChildVariableReceivingParentData", ctx.ParentVariableSendingData);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"]("Child answers:" + ctx.answer);
+    } }, directives: [_test_test_component__WEBPACK_IMPORTED_MODULE_1__["TestComponent"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-root',
+                templateUrl: './app.component.html',
+                styleUrls: ['./app.component.css']
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "ZAI4":
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/*! exports provided: AppModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "3Pt+");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "vY5A");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "Sy1n");
+/* harmony import */ var _test_test_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./test/test.component */ "K9yR");
+
+
+
+
+
+
+
+class AppModule {
+}
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]] });
+AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+        _test_test_component__WEBPACK_IMPORTED_MODULE_5__["TestComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
+        args: [{
+                declarations: [
+                    _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
+                    _test_test_component__WEBPACK_IMPORTED_MODULE_5__["TestComponent"]
+                ],
+                imports: [
+                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                    _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+                    _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormsModule"]
+                ],
+                providers: [],
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "i3Xp":
+/*!*************************************************!*\
+  !*** (webpack)/hot sync nonrecursive ^\.\/log$ ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./log": "dZZH"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "i3Xp";
+
+/***/ }),
+
+/***/ "vY5A":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "tyNb");
+
+
+
+
+const routes = [];
+class AppRoutingModule {
+}
+AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({ type: AppRoutingModule });
+AppRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({ factory: function AppRoutingModule_Factory(t) { return new (t || AppRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsetNgModuleScope"](AppRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]] }); })();
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppRoutingModule, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"],
+        args: [{
+                imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+                exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+            }]
+    }], null, null); })();
+
+
+/***/ }),
+
+/***/ "zUnb":
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ "AytR");
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "ZAI4");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser */ "jhN1");
+
+
+
+
+if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].production) {
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
+}
+_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
+    .catch(err => console.error(err));
+
+
+/***/ }),
+
+/***/ "zn8P":
+/*!******************************************************!*\
+  !*** ./$$_lazy_route_resource lazy namespace object ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncaught exception popping up in devtools
+	return Promise.resolve().then(function() {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = "zn8P";
+
+/***/ })
+
+},[[0,"runtime","vendor"]]]);
+//# sourceMappingURL=main.js.map
